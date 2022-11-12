@@ -14,7 +14,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *  				 			 			|	SHIFT	|	 CTRL	|	NUM_ENT	|	SYM_SPC	|		\**\		|	NUM_ENT	|	SYM_SPC	|	ALT		|	SHIFT	|	
 *       							  	`-----------------------------------------------' 					`-----------------------------------------------'            
 */
-[_DVORAK] = LAYOUT_50(
+[_DVORAK] = LAYOUT(
 																																															
 	KC_HOME, 	KC_GRV, 	PUNC,		KC_P, 		KC_Y,		KC_F, 			KC_ESC,			/**/		NUM_GUI,		KC_G, 			KC_C, 		KC_R, 		KC_L,		KC_QUOT,	KC_END,
 	KC_DEL,		KC_A, 		KC_O, 		KC_E, 		KC_U, 		KC_I, 			LBRAC,			/**/		RBRAC,			KC_D, 			KC_H, 		KC_T, 		KC_N, 		KC_S, 		KC_BSPC,
@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *  				 			 			|	SHIFT	|	 CTRL	|	NUM_ENT	|	SYM_SPC	|		\**\		|	NUM_ENT	|	SYM_SPC	|	ALT		|	SHIFT	|	
 *       							  	`-----------------------------------------------' 					`-----------------------------------------------'    
 */
-[_QWERTY] = LAYOUT_50(
+[_QWERTY] = LAYOUT(
 																																															
 	KC_HOME,	KC_Q, 		KC_W, 		KC_E, 		KC_R, 		KC_T, 			KC_ESC,			/**/		NUM_GUI,	KC_Y, 			KC_U, 		KC_I, 		KC_O, 		KC_P, 		KC_END,
 	KC_DEL, 	KC_A, 		KC_S, 		KC_D, 		KC_F, 		KC_G, 			LBRAC,			/**/		RBRAC,		KC_H, 			KC_J, 		KC_K, 		KC_L, 		KC_SCLN, 	KC_BSPC,
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *  				 			 			|	SHIFT	|	 ALT	|	CTRL	|	SPACE	|		\**\		|	NUM_ENT	|	SYM_SPC	|	ALT		|	SHIFT	|	
 *       							  	`-----------------------------------------------' 					`-----------------------------------------------'    
 */
-[_GAMING] = LAYOUT_50(
+[_GAMING] = LAYOUT(
 																																															
 	KC_HOME, 	KC_GRV, 	KC_DOT,		KC_P, 		KC_Y,		KC_F, 			KC_ESC,			/**/		KC_LGUI,		KC_G, 			KC_C, 		KC_R, 		KC_L,		KC_QUOT,	KC_END,
 	KC_DEL,		KC_A, 		KC_O, 		KC_E, 		KC_U, 		KC_I, 			KC_LBRC,		/**/		RBRAC,			KC_D, 			KC_H, 		KC_T, 		KC_N, 		KC_S, 		KC_BSPC,
@@ -68,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *  				 			 			|	SPECIAL	|	 CTRL	|			|	MOUSE	|		\**\		|			|	MOUSE	|	ALT		|	SPECIAL	|	
 *       							  	`-----------------------------------------------' 					`-----------------------------------------------'    
 */	
-[_NAV_NUM] = LAYOUT_50(
+[_NAV_NUM] = LAYOUT(
 																																															
 	KC_NO,		KC_NO,	 	KC_NO,		KC_UP, 		KC_MPLY,	KC_NO, 			KC_NO,			/**/		KC_TRNS,		KC_NO, 			KC_7, 		KC_8, 		KC_9,		KC_NO, 		KC_NO,
 	KC_DEL,	 	KC_VOLU,	KC_LEFT, 	KC_DOWN,  	KC_RIGHT, 	CVX, 			LSBRAC,			/**/		RSBRAC,			KC_DOT, 		KC_4, 		KC_5, 		KC_6, 		KC_0, 		KC_BSPC,
@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *  				 			 			|	SPECIAL	|	 CTRL	|	MOUSE	|			|		\**\		|	MOUSE	|			|	ALT		|	SPECIAL	|	
 *       							  	`-----------------------------------------------' 					`-----------------------------------------------'    
 */
-[_SYMBOLS] = LAYOUT_50(
+[_SYMBOLS] = LAYOUT(
 																																															
 		KC_NO, 		KC_CIRC, 	KC_EXLM, 	KC_AT, 		KC_PERC, 	KC_NO, 		GAMING,			/**/		DVORAK,	 	KC_NO,	 	KC_F1, 		KC_F2, 		KC_F3, 		KC_F4, 		KC_NO,
 		KC_DEL, 	KC_DLR,	 	KC_HASH, 	KC_AMPR,	KC_ASTR, 	KC_NO, 		LSBRAC,			/**/		RSBRAC,	 	KC_NO,		KC_F5, 		KC_F6, 		KC_F7, 		KC_F8,		KC_BSPC,
@@ -105,7 +105,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *  			 			 				|  KC_TRNS	|			|  KC_TRNS	|  KC_TRNS	|		\**\		|  KC_TRNS	|  KC_TRNS	|			|  KC_TRNS	|	
 *       							  	`-----------------------------------------------' 					`-----------------------------------------------'     
    */
-[_MOUSE] = LAYOUT_50(
+[_MOUSE] = LAYOUT(
 																																															
 		KC_NO, 		KC_NO, 		KC_NO, 		KC_MS_U, 	KC_NO, 		KC_NO, 		KC_NO,			/**/		KC_NO,	 	KC_NO, 		KC_NO, 		KC_WH_U, 	KC_NO, 		KC_NO, 		KC_NO,
 		KC_NO, 		KC_ACL0, 	KC_MS_L, 	KC_MS_D,	KC_MS_R, 	KC_NO, 		KC_NO,			/**/		KC_NO,	 	KC_NO,		KC_BTN1, 	KC_WH_D, 	KC_BTN2, 	KC_NO,		KC_NO,
@@ -123,7 +123,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *  				 			 			|  KC_TRNS	|			|  KC_TRNS	|  KC_TRNS	|		\**\		|  KC_TRNS	|  KC_TRNS	|			|  KC_TRNS	|	
 *       							  	`-----------------------------------------------' 					`-----------------------------------------------'         
 */
-[_SPECIAL] = LAYOUT_50(
+[_SPECIAL] = LAYOUT(
 																																															
 		RESET,		KC_NO,	 	KC_NO, 		KC_NO, 		KC_NO, 		KC_NO, 		QWERTY, 		/**/	 	KC_NO, 		KC_NO, 		KC_NO, 		KC_NO, 		KC_NO, 		KC_NO,		RESET,
 		KC_NO, 		KC_NO,	 	KC_NO, 		KC_NO,		KC_NO, 		KC_NO, 		KC_NO,			/**/		KC_NO,	 	KC_NO,		KC_NO, 		KC_NO, 		KC_NO, 		KC_NO,		KC_NO,

@@ -20,10 +20,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID    0xB00B
-#define PRODUCT_ID   0x0013
+#define PRODUCT_ID   0x0014
 #define DEVICE_VER   0x0002
 #define MANUFACTURER Purple13
-#define PRODUCT      Split Purple
+#define PRODUCT      Split Purple Astar
 
 /* key matrix size  Left and Right hands rows stacked */
 #define MATRIX_COLS 7
@@ -45,10 +45,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION ROW2COL
 
 
-#define SPLIT_USB_DETECT
-/*
- * Feature disable options
- *  These options are also useful to firmware size reduction.
- */
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
